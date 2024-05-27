@@ -1,22 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>SWA - Technology Consultant Company</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- favicon
         ============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
     <!-- Google Fonts
         ============================================ -->
-    <link href='https://fonts.googleapis.com/css?family=Neuton:400,800,700,400italic,300,200' rel='stylesheet'
-          type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Neuton:400,800,700,400italic,300,200"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- style CSS
         ============================================ -->
@@ -29,265 +35,369 @@
     <script src="js/vendor/jquery-3.6.0.min.js"></script>
     <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
     <style type="text/css">
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
+      .swa_static_height_style img {
+        height: 600px !important;
+      }
+
+      .carousel-cell {
+        margin-right: 20px;
+        background: #8c8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+        display: block;
+      }
+
+      .flickity-page-dots {
+        display: none;
+      }
+
+      .flickity-prev-next-button {
+        display: none;
+      }
+
+      @media only screen and (max-width: 1400px) {
+        .vision-font {
+          font-size: xx-large !important;
+        }
         .swa_static_height_style img {
-            height: 600px !important;
+          height: 400px !important;
         }
+      }
 
-        .carousel-cell {
-            margin-right: 20px;
-            background: #8C8;
-            border-radius: 5px;
-            counter-increment: gallery-cell;
-            display: block;
+      @media only screen and (max-width: 1000px) {
+        .vision-font {
+          font-size: x-large !important;
         }
+        .swa_static_height_style img {
+          height: 350px !important;
+        }
+      }
 
-        .flickity-page-dots {
-            display: none;
+      @media only screen and (max-width: 690px) {
+        h2 {
+          line-height: 2px !important;
         }
-
-        .flickity-prev-next-button {
-            display: none;
+        .vision-banner {
+          height: 320px !important;
         }
-
-        @media only screen and (max-width: 1400px) {
-            .vision-font {
-                font-size: xx-large !important;
-            }
-            .swa_static_height_style img {
-                height: 400px !important;
-            }
+        .vision-font {
+          font-size: small !important;
         }
-
-        @media only screen and (max-width: 1000px) {
-            .vision-font {
-                font-size: x-large !important;
-            }
-            .swa_static_height_style img {
-                height: 350px !important;
-            }
+        .swa_static_height_style img {
+          height: 300px !important;
         }
-
-        @media only screen and (max-width: 690px) {
-            h2{
-                line-height: 2px !important;
-            }
-            .vision-banner{
-                height:320px !important;
-            }
-            .vision-font {
-                font-size: small !important;
-            }
-            .swa_static_height_style img {
-                height: 300px !important;
-            }
-        }
+      }
     </style>
     <script type="text/javascript">
-        function wame() {
-            var message = "Saya Tertarik dengan layanan dari SWA Technology Consultant Company, saya ingin bicara lebih lanjut.";
-            var url = "https://wa.me/+628161190303?text=" + message;
-            window.location.href = url;
-        }
-        $(document).ready(function () {
-            $("#flickity-button").hide();
-            $(".layer-1").hide();
-        })
+      function wame() {
+        var message =
+          "Saya Tertarik dengan layanan dari SWA Technology Consultant Company, saya ingin bicara lebih lanjut.";
+        var url = "https://wa.me/+628161190303?text=" + message;
+        window.location.href = url;
+      }
+      $(document).ready(function () {
+        $("#flickity-button").hide();
+        $(".layer-1").hide();
+      });
     </script>
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
     <!--Header Area Start-->
     <header>
-        <!--Mainmenu Start-->
-        <div id="main-menu" style="" class="sticker layout-two-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 d-none d-lg-block">
-                        <div class="logo">
-                            <a href="index.html"><img src="img/logo/swa-logo.png" alt="SWA Consultant" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-9 d-none d-lg-block">
-                        <div class="main-menu" style="float:right">
-                            <nav>
-                                <ul>
-                                    <li><a href="Index.html">Home</a></li>
-                                    <li><a href="">Our Service</a></li>
-                                    <li><a href="">Our Clients</a></li>
-                                    <li class="active"><a href="About.html">About Us</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-12 d-block d-lg-none">
-                        <div class="mobile-menu">
-                            <nav>
-                                <ul>
-                                    <li><a href="Index.html">Home</a></li>
-                                    <li><a href="">Our Service</a></li>
-                                    <li><a href="">Our Clients</a></li>
-                                    <li class="active"><a href="About.html">About Us</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+      <!--Mainmenu Start-->
+      <div id="main-menu" style="" class="sticker layout-two-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 d-none d-lg-block">
+              <div class="logo">
+                <a href="index.html"
+                  ><img src="img/logo/swa-logo.png" alt="SWA Consultant"
+                /></a>
+              </div>
             </div>
+            <div class="col-md-9 d-none d-lg-block">
+              <div class="main-menu" style="float: right">
+                <nav>
+                  <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="">Our Service</a></li>
+                    <li><a href="">Our Clients</a></li>
+                    <li class="active"><a href="About.html">About Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-12 d-block d-lg-none">
+              <div class="mobile-menu">
+                <nav>
+                  <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="">Our Service</a></li>
+                    <li><a href="">Our Clients</a></li>
+                    <li class="active"><a href="About.html">About Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--End of Mainmenu-->
+      </div>
+      <!--End of Mainmenu-->
     </header>
     <!--End of Header Area-->
     <!--Feature Area Start-->
     <div class="slider-area layout-two-slider transparent-color" id="slider">
-        <div class="transparent-overlay"></div>
-        <img class="vision-banner" src="img/banner/banner.png" alt="" />
-        <div class="banner-content static-text">
-            <div class="layer-1">
-                <!--<img src="img/slider/image-slider/mobile-app-layer.png" alt="" />-->
-            </div>
-            <div class="text-content container">
-                <h2 class="title2 d-md-block"><span class="vision-font">Vision</span></h2>
-                <p class="vision-font"><span>&#8226;</span>Become professional IT Company with optimum services and solution </p>
-                <p class="vision-font">as well as have good compete ability.</p>
-                <p class="vision-font"><span>&#8226;</span>We offer integrated solution, planning and strategy </p>
-                <p class="vision-font">based on up to date Technology.</p>
-
-                <h2 class="title2 d-md-block"><span class="vision-font">Mission</span></h2>
-                <p class="vision-font"><span>&#8226;</span>Not only giving solution, we give comprehensive services </p>
-                <p class="vision-font">in every our information technology services.</p>
-                <p class="vision-font"><span>&#8226;</span>Giving best quality of services and products </p>
-                <p class="vision-font">with maximum after sales for every customers.</p>
-
-            </div>
-            <div class="layer-1">
-                <!--<img src="img/banner/work-banner.png" alt="" />-->
-            </div>
+      <div class="transparent-overlay"></div>
+      <img class="vision-banner" src="img/banner/banner.png" alt="" />
+      <div class="banner-content static-text">
+        <div class="layer-1">
+          <!--<img src="img/slider/image-slider/mobile-app-layer.png" alt="" />-->
         </div>
+        <div class="text-content container">
+          <div>
+            <h2 class="title2 d-md-block">
+              <span class="vision-font">Vision</span>
+            </h2>
+            <p class="vision-font">
+              <span>&#8226;</span>Become professional IT Company with optimum
+              services and solution as well as have good compete ability.
+            </p>
+            <p class="vision-font">
+              <span>&#8226;</span>We offer integrated solution, planning and
+              strategy based on up to date Technology.
+            </p>
+          </div>
 
+          <div>
+            <h2 class="title2 d-md-block">
+              <span class="vision-font">Mission</span>
+            </h2>
+            <p class="vision-font">
+              <span>&#8226;</span>Not only giving solution, we give
+              comprehensive services in every our information technology
+              services.
+            </p>
+            <p class="vision-font">
+              <span>&#8226;</span>Giving best quality of services and products
+              with maximum after sales for every customers.
+            </p>
+          </div>
+        </div>
+        <div class="layer-1">
+          <!--<img src="img/banner/work-banner.png" alt="" />-->
+        </div>
+      </div>
     </div>
 
     <div class="service-area section-light-one light" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="section-title light">
-                        <h1>Our Legal <span>Scope</span></h1>
-                        <!--<img src="img/icon/title-bg.png" alt="">-->
-                    </div>
-                </div>
-                <img src="img/swa/scope.png" />
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title light">
+              <h1>Our Legal <span>Scope</span></h1>
+              <!--<img src="img/icon/title-bg.png" alt="">-->
             </div>
+          </div>
+          <!-- <img src="img/swa/scope.png" /> -->
+          <div class="service-container">
+            <div class="service">
+              <div class="card">
+                <img src="img/swa/kontruksi-gedung-hunian.png" alt="Service 1">
+                <p>Kontruksi Gedung Hunian</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/instalasi-kontruksi-lainnya-ytdl.png" alt="Service 2">
+                <p>Instalasi Kontruksi Lainnya Ytdl</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/penerbitan-piranti-lunak.png" alt="Service 3">
+                <p>Penerbitan Piranti Lunak (Software)</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/portal-web.png" alt="Service 4">
+                <p>Portal Web Dan/Atau Platform Digital Dengan Tujuan Komersil</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/aktivitas-profesional.png" alt="Service 5">
+                <p>Aktivitas Profesional, Ilmiah dan Teknis Lainnya Ytdl</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/instalasi-elektronika.png" alt="Service 6">
+                <p>Instalasi Elektronika</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/perdagangan-besar.png" alt="Service 7">
+                <p>Perdagangan Besar Berbagai Macam Barang</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/aktivitas-teknologi-informasi.png" alt="Service 8">
+                <p>Aktivitas Teknologi Informasi dan Jasa Komputer lainnya</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/aktivitas-keinsinyuran.png" alt="Service 9">
+                <p>Aktivitas Keinsinyuran dan Konsultasi Teknis Ytdl</p>
+              </div>
+              <div class="card">
+                <img src="img/swa/aktivitas-penyedia-gabungan-jasa.png" alt="Service 10">
+                <p>Aktivitas Penyedia Gabungan Jasa Penunjang Fasilitas</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--End of Feature Area-->
     <!--Download App Area Start-->
     <div class="download-area">
-        <div class="transparent-overlay"></div>
-        <div class="container">
-            <div class="row">
-                
-            </div>
-        </div>
+      <div class="transparent-overlay"></div>
+      <div class="container">
+        <div class="row"></div>
+      </div>
     </div>
     <!--Download App Area Start-->
     <!--Contact Us Area Start-->
     <div class="contact-area contact-light" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-left">
-                    <div class="contact-info-container">
-                        <div class="row">
-                            <div class="col-lg-6 col-12">
-                                <div class="section-title">
-                                    <h1>Contact <span>With Us</span></h1>
-                                    <!--<p>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-left">
+            <div class="contact-info-container">
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <div class="section-title">
+                    <h1>Contact <span>With Us</span></h1>
+                    <!--<p>
                                         Lorem ipsum dolor sit amet proin gravida nibh vel velit roin gravida
                                         nibh vel velit
                                     </p>-->
-                                    <img src="img/icon/title-bg.png" alt="">
-                                </div>
-                                <div class="contact-address">
-                                    <ul>
-                                        <li>
-                                            <span class="icon-img"><img src="img/icon/phone.png" alt=""></span> <span class="information">(62) 816-119-0303</span>
-                                        </li>
-                                        <li>
-                                            <span class="icon-img"><img src="img/icon/envelope.png" alt=""></span> <span class="information">support@swaconsultant.com</span>
-                                        </li>
-                                        <li>
-                                            <span class="icon-img"><img src="img/icon/map.png" alt=""></span><span class="information">
-                                                Jati Warna No 132 Bekasi, West Java, Indonesia 17324
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <form action="https://whizthemes.com/mail-php/other/mail.php" id="contact-form">
-                                    <div class="form-top">
-                                        <div class="form-group">
-                                            <input name="con_name" type="text" class="form-control" placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <input name="con_email" type="email" class="form-control" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input name="con_subject" type="text" class="form-control"
-                                                   placeholder="Subject">
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea name="con_message" class="yourmessage form-control"
-                                                      placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="submit-form form-group">
-                                        <button class="button" type="submit" onclick="sendmail()">Submit</button>
-                                        <p class="form-messege mt-3 mb-0"></p>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="img/icon/title-bg.png" alt="" />
+                  </div>
+                  <div class="contact-address">
+                    <ul>
+                      <li>
+                        <span class="icon-img"
+                          ><img src="img/icon/phone.png" alt=""
+                        /></span>
+                        <span class="information">(62) 816-119-0303</span>
+                      </li>
+                      <li>
+                        <span class="icon-img"
+                          ><img src="img/icon/envelope.png" alt=""
+                        /></span>
+                        <span class="information"
+                          >support@swaconsultant.com</span
+                        >
+                      </li>
+                      <li>
+                        <span class="icon-img"
+                          ><img src="img/icon/map.png" alt="" /></span
+                        ><span class="information">
+                          Jati Warna No 132 Bekasi, West Java, Indonesia 17324
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="col-lg-6 col-12">
+                  <form
+                    action="https://whizthemes.com/mail-php/other/mail.php"
+                    id="contact-form"
+                  >
+                    <div class="form-top">
+                      <div class="form-group">
+                        <input
+                          name="con_name"
+                          type="text"
+                          class="form-control"
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          name="con_email"
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          name="con_subject"
+                          type="text"
+                          class="form-control"
+                          placeholder="Subject"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <textarea
+                          name="con_message"
+                          class="yourmessage form-control"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="submit-form form-group">
+                      <button class="button" type="submit" onclick="sendmail()">
+                        Submit
+                      </button>
+                      <p class="form-messege mt-3 mb-0"></p>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--End of Contact Us Area-->
     <!--Footer Area Start-->
     <footer class="section-dark-two">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-area text-center">
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="img/logo/swa-logo.png" alt=""></a>
-                        </div>
-                        <p>
-                            Copyright ©
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script> SWA - Technology Consultant Company. All Rights Reserved
-                        </p>
-                        <div class="social-link">
-                            <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
-                            <a onclick="wame()"><i class="fa fa-whatsapp">  (+62) 811-806-0303</i></a>
-                            <!--<a href="#"><i class="fa fa-linkedin"></i></a>-->
-                            <a href="Index"><i class="fa fa-globe">  www.swaconsultant.com</i></a>
-                            <a href="#"><i class="fa fa-phone">  (+62) 816-119-0303</i></a>
-                            <a href="support@swaconsultant.com"><i class="fa fa-envelope-o">  support@swaconsultant.com</i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-area text-center">
+              <div class="footer-logo">
+                <a href="index.html"
+                  ><img src="img/logo/swa-logo.png" alt=""
+                /></a>
+              </div>
+              <p>
+                Copyright ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                SWA - Technology Consultant Company. All Rights Reserved
+              </p>
+              <div class="social-link">
+                <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                <a onclick="wame()"
+                  ><i class="fa fa-whatsapp"> (+62) 811-806-0303</i></a
+                >
+                <!--<a href="#"><i class="fa fa-linkedin"></i></a>-->
+                <a href="Index"
+                  ><i class="fa fa-globe"> www.swaconsultant.com</i></a
+                >
+                <a href="#"><i class="fa fa-phone"> (+62) 816-119-0303</i></a>
+                <a href="support@swaconsultant.com"
+                  ><i class="fa fa-envelope-o"> support@swaconsultant.com</i></a
+                >
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!--End of Footer Area-->
     <!-- jquery
@@ -339,7 +449,10 @@
     <!-- main JS
         ============================================ -->
     <script src="js/main.js"></script>
-    <a id="wa-icon" style="position: relative; z-index: 21474847; display: inline;"><i class="fa fa-whatsapp"> disini</i></a>
-</body>
-
+    <a
+      id="wa-icon"
+      style="position: relative; z-index: 21474847; display: inline"
+      ><i class="fa fa-whatsapp"> disini</i></a
+    >
+  </body>
 </html>

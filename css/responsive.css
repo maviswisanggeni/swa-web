@@ -11,6 +11,19 @@
         line-height: 100px;
         margin-bottom: 10px;
     }
+    .banner-content .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-content .text-content .title2 {
+        max-width: 60%;
+        line-height: 1;
+        font-weight: bold;
+    }
+    .banner-content .text-content p {
+        line-height: 1;
+    }
     .banner-content .banner-button {margin-top: 18px}
     .app-image {margin-top: -210px}
     .slider-area.solid-color, #slider .video-wrapper {height: 700px}
@@ -33,10 +46,60 @@
     .layout-two-slider .banner-content .banner-button, #slider.layout-two-video .video-banner .banner-content .banner-button {
         margin-top: 33px;
     }
+    .service-area .service-container .service {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .service-area .service-container .service .card {
+        padding: 50px 30px;
+    }
+
+    .service-area .service-container .service .card img {
+        width: 80px;
+    }
+
+    .service-area .service-container .service .card p {
+        font-size: 16px;
+    }
 }
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
     .container {width:970px}
+    .slider-area {
+        height: fit-content;
+    }
+    .slider-area img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .slider-area .vision-banner {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .banner-content .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-content .text-content .banner-button {
+        margin-top: 0;
+    }
+    .banner-content .text-content .title1 {
+        font-size: 35px;
+    }
+    .banner-content .text-content .title2 {
+        max-width: 70%;
+        font-size: 50px;
+        line-height: 1;
+        font-weight: bold;
+    }
+    .banner-content .text-content p {
+        line-height: 1;
+        max-width: 70%;
+    }
     .main-menu nav ul li a {
         padding: 18px 8px;
     }
@@ -63,13 +126,45 @@
         letter-spacing: 8px;
         margin-bottom: 20px; 
     }
+    .service-area .service-container .service {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .service-area .service-container .service .card {
+        padding: 40px 25px;
+    }
+
+    .service-area .service-container .service .card img {
+        width: 70px;
+    }
+
+    .service-area .service-container .service .card p {
+        font-size: 15px;
+    }
 }
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
     .container {width:750px}
     .mobile-menu .mean-bar {
-        background: rgba(0, 0, 0, 0) url("../img/logo/swa-logo.png") no-repeat scroll left top;
+        background: rgba(0, 0, 0, 0) url("../img/logo/swa-logo.png") no-repeat scroll left center;
         padding: 10px 0 0;
+    }
+    #main-menu .container .logo {
+        display: none;
+    }
+    .slider-area {
+        height: 70vh;
+    }
+    .slider-area img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .slider-area .vision-banner {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
     #main-menu {
         background: #009fdd none repeat scroll 0 0;
@@ -78,7 +173,75 @@
         top: 0;
     }
     .banner-content .text-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
         top: 15%;
+        gap: 15px;
+    }
+    .banner-content .text-content .banner-button {
+        margin-top: 0;
+    }
+    .banner-content .text-content .title1 {
+        font-size: 35px;
+    }
+    .banner-content .text-content .title2 {
+        max-width: 90%;
+        font-size: 50px;
+        line-height: 1.3;
+        font-weight: bold;
+    }
+    .banner-content .text-content p {
+        line-height: 1.5;
+        max-width: 90%;
+    }
+    .feature-area {
+        padding: 100px auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    .feature-area .container .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-area .container .row .feature-list {
+        display: flex;
+        width: max-content;
+    }
+    .feature-area .container .row .feature-list .single-feature {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .feature-area .container .row .feature-list .single-feature span {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .feature-area .container .row .feature-list .single-feature .single-feature-text h5 {
+        margin-bottom: 30px;
+    }
+    .feature-area .container .row .feature-list .single-feature .single-feature-text p {
+        margin-top: -10px;
+    }
+    .feature-area .container .row .feature-text {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-area .container .row .feature-text h2 {
+        margin-bottom: 10px;
+    }
+    .feature-area .container .row .feature-text .p-title {
+  x`      /* font-size: 35px; */
     }
     .banner-content h2, .layout-two-slider .banner-content h2, #slider.layout-two-video .video-banner .banner-content h2 {
         font-size: 50px;
@@ -104,19 +267,46 @@
     }
     .preview-2 .nivo-directionNav a {margin-top: -55.5px}
     .layout-two-slider .banner-content .text-content, #slider.layout-two-video .video-banner .text-content {
+        max-width: 100%;
+        padding: 0 40px;
         top: 1% !important;
     }
     .error h1{
         font-size: 130px;
         letter-spacing: 6px;
     }
+    .service-area .service-container .service {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .service-area .service-container .service .card {
+        padding: 35px 20px;
+    }
+
+    .service-area .service-container .service .card img {
+        width: 60px;
+    }
+
+    .service-area .service-container .service .card p {
+        font-size: 14px;
+    }
 }
 /* small mobile :320px. */
 @media (max-width: 767px) {
-    .container {width:300px}
+    /* .container {width:300px} */
     .mobile-menu .mean-bar {
-        background: rgba(0, 0, 0, 0) url("../img/logo/swa-logo.png") no-repeat scroll left top;
+        background: rgba(0, 0, 0, 0) url("../img/logo/swa-logo.png") no-repeat scroll left center;
         padding: 10px 0 0;
+        width: 90vw;
+    }
+    #main-menu .container {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+    #main-menu .container .logo {
+        display: none;
     }
     #main-menu {
         background: #009fdd none repeat scroll 0 0;
@@ -124,9 +314,49 @@
         position: static;
         top: 0;
     }
+    #main-menu .container .row .mobile-menu-container {
+        width: ;
+        padding: 0;
+        background-color: red;
+    }
+    .layout-two-slider .banner-content .text-content, #slider.layout-two-video .video-banner .text-content {
+        max-width: 100%;
+        padding: 0 40px;
+        top: 0% !important;
+    }
     .banner-content .text-content {
-        top: 10% !important;
-        margin-left:10px;
+        /* top: 10% !important;
+        margin-left:10px; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        /* background-color: blueviolet; */
+    }
+    .slider-area .vision-banner {
+        /* height: 100%; */
+        padding: 0;
+        height: 70vh !important;
+        object-fit: cover;
+        object-position: center;
+    }
+    .banner-content .text-content .title2 {
+        margin-bottom: 20px;
+    }
+    .banner-content .text-content p {
+        font-size: 18px !important;
+        max-width: 100%;
+        text-align: justify;
+        line-height: 1.2;
+    }
+    .feature-area .container .row .feature-text {
+        padding: 0 15px;
+        text-align: left;
+    }
+    .feature-area .container .row .feature-text h1, .feature-area .container .row .feature-text h2 {
+        font-size: 32px;
     }
     .banner-content h2, .layout-two-slider .banner-content h2, #slider.layout-two-video .video-banner .banner-content h2 {
         font-size: 26px;
@@ -195,6 +425,22 @@
         font-size: 100px;
         letter-spacing: 4px;
     }
+    .service-area .service-container .service {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .service-area .service-container .service .card {
+        padding: 20px 10px;
+    }
+
+    .service-area .service-container .service .card img {
+        width: 40px;
+    }
+
+    .service-area .service-container .service .card p {
+        font-size: 12px;
+    }
 }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -211,5 +457,21 @@
     .slick-next {right: -20px}
     .slider-area.solid-color.layout-two-slider, #slider.layout-two-video .video-banner {
         height: 278px;
+    }
+    .service-area .service-container .service {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .service-area .service-container .service .card {
+        padding: 30px 15px;
+    }
+
+    .service-area .service-container .service .card img {
+        width: 50px;
+    }
+
+    .service-area .service-container .service .card p {
+        font-size: 13px;
     }
 }

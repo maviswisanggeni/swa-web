@@ -487,6 +487,39 @@ button{
     top: 0;
     transform: scale(1);
 }
+.service-area .service-container {
+    width: 100%;
+    height: fit-content;
+    /* background-color: #aaa9a7; */
+}
+.service-area .service-container .service {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.service-area .service-container .service .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.service-area .service-container .service .card img {
+    width: 80px;
+    height: auto;
+}
+.service-area .service-container .service .card p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    font-family: "montserratregular";
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+}
+
 /*--------------------------------------  
 	6. Video Area
 ----------------------------------------*/
@@ -553,6 +586,15 @@ button{
 .features-carousel-area {
     padding-top: 100px;
     text-align: right;
+    overflow: hidden;
+}
+.swa_static_height_style .carousel:focus {
+    /* background-color: #8C8; */
+    outline: none;
+}
+.swa_static_height_style .carousel .carousel-cell img {
+    object-fit: cover;
+    object-position: center;
 }
 .features-list > h1 {
     color: #ffffff;
@@ -1012,6 +1054,7 @@ textarea.yourmessage.form-control:focus {
 footer {
     padding-bottom: 60px;
     padding-top: 70px;
+    margin-bottom: -50px;
 }
 .footer-area > p {
     color: #c3c3c3;
@@ -1046,6 +1089,20 @@ footer {
 }
 .banner-content.static-text.image-text .text-content .title1, .banner-content.static-text.image-text .text-content .title2, .banner-content.static-text.image-text .text-content .title3, .banner-content.static-text.image-text .text-content p {
     opacity: 0.65;
+}
+.banner-content .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.banner-content .text-content .title2 {
+    max-width: 60%;
+    line-height: 1;
+    font-weight: bold;
+}
+.banner-content .text-content p {
+    font-size: 20px !important;
+    line-height: 1;
 }
 .banner-content.static-text.image-text .text-content .banner-button a {border-color: #d7d7d7} 
 .banner-content.static-text.image-text .text-content .banner-button a:hover {border-color: #009FDD}

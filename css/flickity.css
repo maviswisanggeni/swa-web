@@ -11,6 +11,11 @@ https://flickity.metafizzy.co
         outline: none;
     }
 
+    /* .flickity-enabled:focus .flickity-viewport {
+        outline: none;
+    } */
+
+
 .flickity-viewport {
     overflow: hidden;
     position: relative;

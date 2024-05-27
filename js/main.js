@@ -36,7 +36,7 @@
     jQuery MeanMenu
 ------------------------------ */
     $('.mobile-menu nav').meanmenu({
-        meanScreenWidth: "990",
+        meanScreenWidth: "991",
         meanMenuContainer: ".mobile-menu",
         onePage: true,
     });

@@ -13,6 +13,7 @@ a.meanmenu-reveal{display:none}
   cursor: pointer;
   display: block;
   float: right;
+  /* center items */
   font-family: Arial,Helvetica,sans-serif;
   font-size: 1px;
   font-weight: 700;
